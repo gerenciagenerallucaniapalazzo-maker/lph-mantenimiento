@@ -52,7 +52,7 @@ function renderUserPicker() {
     renderMain();
     return;
   }
-  const opciones = state.personal.map(p => `<option value="${p.nombre}">${p.nombre} — ${p.rol}</option>`).join("");
+  const opciones = state.personal.map(p => `<option value="${p.nombre}">${p.nombre}</option>`).join("");
   $("#app").innerHTML = `
     <div class="gate">
       <h1>🏨 ${CONFIG.HOTEL_NOMBRE}</h1>
